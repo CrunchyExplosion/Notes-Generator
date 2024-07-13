@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Chatbot Interface</h1>
+        <form action="/process_text" method="POST">
+            <label for="model_name">Choose a Model:</label>
+            <select name="model_name" id="model_name">
+                <option value="gemini-pro">Model 1</option>
+                <option value="gemini-1.5-pro-latest">Model 2</option>
+                <!-- Add more options dynamically based on available models -->
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
