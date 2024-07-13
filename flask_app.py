@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Configure Google AI API
 #GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')  # Make sure to set your API key in your environment
-genai.configure(api_key='AIzaSyAhd6hBehgK4QRMrnGgukT1VZKSoDqNETk')
+genai.configure(api_key='GOOGLE_API_KEY')
 
 # Initialize speech recognizer
 def listen():
