@@ -124,7 +124,7 @@ def process_questions(transcript):
             print("Invalid choice. Please select 1 or 2.")
 
 # Retrieve API Key from Environment Variable
-GOOGLE_API_KEY = 'AIzaSyAhd6hBehgK4QRMrnGgukT1VZKSoDqNETk'
+GOOGLE_API_KEY = 'Your_API_Key'
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Main loop
